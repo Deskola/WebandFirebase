@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<div id="login_div">
+		<h2>Login</h2>
+		
+		<label>Email</label>
+		<input type="email" name="email" id="email_field" placeholder="Email"><br><br>
+		<label>Password</label>
+		<input type="password" name="password" id="password_field" placeholder="Password"><br><br>
+		<button onclick="login()">Login</button><br><br>
+		
+	</div>
+
+	<div id="logout_div">
+		Welcome to firebase login. You are currently loged in<p id="user_param"></p>,<br>
+		You can  lougot here<br><br>
+		<button onclick="logout()">logout</button>
+	</div>
+
+	<div id="signup_div">
+		<h2>Signup</h2>
+
+		<label>Email</label>
+		<input type="email" name="email" id="new_email_field" placeholder="Email"><br><br>
+		<label>Password</label>
+		<input type="password" name="password" id="new_password_field" placeholder="Password"><br><br>
+		<label>Confirm Password</label>
+		<input type="password" name="confpassword" id="conf_password_field" placeholder="Confirm Password"><br><br>
+		<button onclick="signup()">Signup</button><br><br>
+		
+	</div>
+
+	
+
+	<!-- The core Firebase JS SDK is always required and must be listed first -->
+	<script src="https://www.gstatic.com/firebasejs/7.9.3/firebase-app.js"></script>
+
+	<!-- TODO: Add SDKs for Firebase products that you want to use
+	     https://firebase.google.com/docs/web/setup#available-libraries -->
+	<script src="https://www.gstatic.com/firebasejs/7.9.3/firebase-analytics.js"></script>
+
+	<script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-auth.js"></script>
+
+	<script>
+	  // Your web app's Firebase configuration
+	  var firebaseConfig = {
+	    apiKey: "AIzaSyAR2Cr0AWiQ8Nd9Qbm1ho58wdnbPST4NYg",
+	    authDomain: "webtrial-dd6c2.firebaseapp.com",
+	    databaseURL: "https://webtrial-dd6c2.firebaseio.com",
+	    projectId: "webtrial-dd6c2",
+	    storageBucket: "webtrial-dd6c2.appspot.com",
+	    messagingSenderId: "729062457152",
+	    appId: "1:729062457152:web:11c483ead199b9b322c4a5",
+	    measurementId: "G-HNCXHWVME6"
+	  };
+	  // Initialize Firebase
+	  firebase.initializeApp(firebaseConfig);
+	  firebase.analytics();
+	</script>
+	<script src="index.js">
+		
+	</script>
+</body>
+</html>
